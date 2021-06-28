@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/802409dd86.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+<section class="sub-header">
+<nav>
+    <a href="index.html"><img src = "logo.png" alt="logo"></a>
+    <div class="nav-links" id="navLinks">
+        <i class="fas fa-times-circle" onclick="hideMenu()"></i>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+    <i class="fas fa-bars" onclick="showMenu()"></i>
+</nav>
+
+<h1 style="margin-top: 100px;">About Us</h1>
+
+</section>
+
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+        <h1 style="padding-top: 0px;">We are the Eduford University</h1>
+        <br>
+        <p style="padding: 15px 0px 25px;">Eduford University is one of the most successful worldwide best ranked university. Students from all over the world come here for study, and make their carrier stronger and more stable.<br><br> Our infrastructure, technologies are very advanced level, which help students in their study as well as their comfort.<br><br> Our tech fest is one of the greatest fest in India. Even people outside India came here to enjoy our fest.<br><br>
+            We arrange also many cultural events, sports event, art and craft gallery etc. through out the academic session.
+        </p>
+        <a href="course.html" class="hero-btn red-btn">EXPLORE-NOW</a>
+        </div>
+        <div class="about-col">
+            <img src="about.jpg" alt="about us">
+        </div>
+    </div>
+</section>
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Eduford University is one of the most successful worldwide best ranked university</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>eduford university pvt ltd. 2020-2021</p>
+</section>
+
+
+
+
+
+
+
+
+
+<!-- _____________JavaScrupt____________ -->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+</body>
+</html>

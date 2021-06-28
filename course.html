@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/802409dd86.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+<section class="sub-header">
+<nav>
+    <a href="index.html"><img src = "logo.png" alt="logo"></a>
+    <div class="nav-links" id="navLinks">
+        <i class="fas fa-times-circle" onclick="hideMenu()"></i>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+    <i class="fas fa-bars" onclick="showMenu()"></i>
+</nav>
+
+<h1 style="margin-top: 100px;">Our Courses</h1>
+
+</section>
+
+<!-- Course -->
+<section class="course">
+    <h1>Courses We Offer</h1>
+    <p>We have variety of courses. We persue Engineering, Law and Business Studies in our university. For more visit our courses section.</p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>Engineering</h3>
+            <p>The discipline of engineering encompasses a broad range of more specialized fields of engineering, each with a more specific emphasis on particular areas of applied mathematics, applied science, and types of application</p>
+        </div>
+        <div class="course-col">
+            <h3>LLB study</h3>
+            <p>LLB is the most common degree of law education. The LLB takes the 3 year as the duration of the course. One who wishes to do the integrated course can take the admission in 5 year integrated programme after the completion of 10+2 exams. LLM is the master degree in legal education having one or two-year duration.</p>
+        </div>
+        <div class="course-col">
+            <h3>Business Analytics</h3>
+            <p>Business analytics (BA) refers to the skills, technologies, and practices for continuous iterative exploration and investigation of past business performance to gain insight and drive business planning.Business analytics focuses on developing new insights and understanding of business performance based on data and statistical methods.</p>
+        </div>
+    </div>
+</section>
+
+<!-- facilities -->
+<section class="facilities">
+    <h1>Our Facilities</h1>
+    <p>Our university provides world class study experience, with modern technologies and facilities in your comfort zone. </p>
+    <div class="row">
+        <div class="facilities-col">
+            <img src="library.png" alt="library">
+            <h3>World Class Library</h3>
+            <p>We have a two storey Full air conditioned library with more than lakh books, novels of different catagories.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="basketball.png" alt="library">
+            <h3>World Class Playground</h3>
+            <p>We have basketball court, lawn tennis court, cricket ground, soccer ground, and separate common rooms for boys and girls with swimming pool.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="cafeteria.png" alt="library">
+            <h3>Tasty and Healthy Food</h3>
+            <p>Our university serves you world class tasty and healthy food, any time. We have well trained cook, who can provide quality food to the students.</p>
+        </div>
+    </div>
+</section>
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Eduford University is one of the most successful worldwide best ranked university</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>eduford university pvt ltd. 2020-2021</p>
+</section>
+
+
+
+
+
+
+
+
+
+<!-- _____________JavaScrupt____________ -->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+</body>
+</html>
